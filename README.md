@@ -13,7 +13,6 @@ A responsive, dark-themed e-commerce product listing page built with **HTML**, *
 
 ## Screenshots
 
-###Desktop View
 ![Desktop Home](assets/desktopview.png)
 
 ### Mobile Responsive
