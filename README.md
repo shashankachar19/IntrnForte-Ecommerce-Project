@@ -14,8 +14,7 @@ A responsive, dark-themed e-commerce product listing page built with **HTML**, *
 ## Screenshots
 
 ###Desktop View
-![Desktop Home](assets/desktop-preview.jpg)
-*(Note: Upload your screenshot `image_123236.jpg` to your repo and rename it if needed, or just remove this line if you don't want to mess with images yet)*
+![Desktop Home](assets/desktopview.jpg)
 
 ### Mobile Responsive
 The layout automatically adjusts to a single-column stack on mobile devices for seamless browsing.
