@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUF Gear Store | ISE Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">TUF</span>
+        <span class="brand-text">Gear Store</span>
+      </div>
+      <p class="tagline">ISE Project · Product Listing</p>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <h2 class="panel-title">Filters</h2>
+
+        <section class="filter-group">
+          <h3 class="filter-title">Category</h3>
+          <div class="button-group" id="categoryButtons">
+            <button class="filter-btn active" data-category="All">All</button>
+            <button class="filter-btn" data-category="Electronics">
+              Electronics
+            </button>
+            <button class="filter-btn" data-category="Clothing">Clothing</button>
+            <button class="filter-btn" data-category="Accessories">
+              Accessories
+            </button>
+          </div>
+        </section>
+
+        <section class="filter-group">
+          <h3 class="filter-title">Max Price</h3>
+          <label class="price-label" for="priceRange">
+            Up to:
+            <span id="priceValue">₹15000</span>
+          </label>
+          <input
+            type="range"
+            id="priceRange"
+            min="500"
+            max="15000"
+            step="500"
+            value="15000"
+          />
+        </section>
+
+        <section class="cart-widget">
+          <h3 class="cart-title">Cart Summary</h3>
+          <p class="cart-label">Total Price</p>
+          <p class="cart-total" id="cartTotal">&#8377;0</p>
+          <button class="checkout-btn" type="button" onclick="showToast('Proceeding to Checkout...')">Checkout</button>
+        </section>
+      </aside>
+
+      <section class="content">
+        <div class="header-banner">
+            <h2 class="section-title">Latest Drops</h2>
+            <p class="section-subtitle">
+            Explore top picks across electronics, clothing, and accessories.
+            </p>
+        </div>
+
+        <div id="productGrid" class="product-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>ISE Final Submission · Basic Ecommerce Product Listing</p>
+    </footer>
+
+    <div id="toast-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
